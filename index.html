@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">STUDENT REGISTRATION FORM
+    </div>
+    <form action="">
+      <div class="form">
+        <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" placeholder="Enter first name" maxlength="30" pattern="[A-Za-z]{1,32}"
+            required>
+        </div>
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" placeholder="Enter last name" maxlength="30" pattern="[A-Za-z]{1,32}"
+            required>
+        </div>
+        <div class="inputfield">
+          <label for="">Gender</label>
+          <input type="radio" name="gender" id="radio" required>Male
+          <input type="radio" name="gender" id="radio" required>Female
+        </div>
+        <div class="inputfield">
+          <label for="">Age</label>
+          <input type="text" class="input" placeholder="Enter your age" maxlength="2" pattern="^[0-9]{2}$" required
+            min="18" max="65" placeholder="Enter your age">
+        </div>
+        <div class="inputfield">
+          <label for="">Date of Birth</label>
+          <input type="date" class="input" required>
+        </div>
+
+
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+        </div>
+        <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input" placeholder="Enter your password min 8 characters" maxlength="100"
+            minlength="8" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+        </div>
+        <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input" placeholder="Enter your password min 8 characters" maxlength="100"
+            minlength="8" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+        </div>
+        <div class="inputfield">
+          <label for="">Phone Number</label>
+          <div class="custom-select" id="phone-codes">
+            <select name="" id="phone-code">
+              <option value="+91">+91</option>
+            </select>
+          </div>
+          <input type="tel" class="input" maxlength="10" id="phone-number" placeholder="Enter your phone number"
+            pattern="[7-9]{1}[0-9]{9}" title="Please enter valid phone number">
+        </div>
+        <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" name="" id="" cols="30" rows="5" placeholder="Enter your address"
+            pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$" maxlength="100" required></textarea>
+        </div>
+        <div class="inputfield">
+          <label>State</label>
+          <div class="custom_select">
+            <select id="country-state" name="country-state" required>
+              <option value="">--Select your state--</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CH">Chandigarh</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="LA">Ladakh</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PY">Puducherry</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TG">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+            </select>
+          </div>
+        </div>
+        <div class="inputfield">
+          <label>Pin Code</label>
+          <input type="text" class="input" placeholder="Enter your postal code" maxlength="6" pattern="^[0-9]{6}$"
+            required>
+        </div>
+
+        <div class="inputfield">
+          <label for="">Hobbies</label>
+          <div class="hobbies">
+            <input type="checkbox" name="" id="">
+            <label for="">Music</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Movies</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Sports</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Travel</label>
+          </div>
+        </div>
+
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+          <p>I hereby declare that the above information provided is true and correct.</p>
+        </div>
+        <div class="inputfield" id="btn">
+          <button type="submit" value="Register" class="btn">Submit</button>
+          <button type="reset" value="Reset" class="btn">Reset</button>
+
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
