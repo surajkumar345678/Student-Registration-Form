@@ -226,3 +226,6 @@ body {
   color:black;
   padding: 5px 150px;
 }
+#name{
+  text-transform: uppercase;
+}
