@@ -191,7 +191,8 @@ body {
   .wrapper .form .inputfield.terms {
     flex-direction: row;
   }
-  #btn{
+
+  #btn {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -223,13 +224,14 @@ body {
   width: 83%;
 }
 
-#message{
+#message {
   font-size: 14px;
   margin: 2px 0;
   display: inline-block;
-  color:black;
+  color: black;
   padding: 5px 150px;
 }
-#name{
+
+#name {
   text-transform: capitalize;
 }
