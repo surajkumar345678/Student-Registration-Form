@@ -24,51 +24,54 @@
           <input type="text" class="input" id="name" name="fname" placeholder="Enter first name" maxlength="30"
             pattern="[A-Za-z]{1,32}" required>
         </div>
+
         <div class="inputfield">
           <label>Last Name</label>
           <input type="text" class="input" id="name" name="lname" placeholder="Enter last name" maxlength="30"
             pattern="[A-Za-z]{1,32}" required>
         </div>
+
         <div class="inputfield">
           <label for="">Gender</label>
           <input type="radio" name="gender" id="radio" value="Male">Male
           <input type="radio" name="gender" id="radio" value="Female">Female
         </div>
+
         <div class="inputfield">
           <label for="">Age</label>
           <input type="text" class="input" name="age" placeholder="Enter your age" maxlength="2" pattern="^[0-9]{2}$"
             required placeholder="Enter your age">
         </div>
+
         <div class="inputfield">
           <label for="">Date of Birth</label>
           <input type="date" class="input" name="dob" required>
         </div>
-
-
 
         <div class="inputfield">
           <label>Email Address</label>
           <input type="email" class="input" name="email" placeholder="Enter your email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
         </div>
+
         <div class="inputfield">
           <label>Password</label>
           <input type="password" class="input" id="password" name="" placeholder="Enter your password min 8 characters"
             autocomplete="off" onkeyup='check()' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
             maxlength="100" minlength="8" required>
-
         </div>
+
         <div class="inputfield">
           <label>Confirm Password</label>
           <input type="password" onkeyup='check()' class="input" id="confirm-password" name=""
             placeholder="Confirm password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
             maxlength="100" minlength="8" required>
-
-
         </div>
+
         <p id="message"></p>
+
         <div class="inputfield">
           <label for="">Phone Number</label>
           <div class="custom-select" id="phone-codes">
@@ -79,11 +82,13 @@
           <input type="tel" class="input" name="phone-number" maxlength="10" id="phone-number"
             placeholder="Enter your phone number" pattern="[7-9]{1}[0-9]{9}" title="Please enter valid phone number">
         </div>
+
         <div class="inputfield">
           <label>Address</label>
           <textarea class="textarea" name="address" id="" cols="30" rows="5" placeholder="Enter your address"
             pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$" maxlength="100" required></textarea>
         </div>
+
         <div class="inputfield">
           <label>State</label>
           <div class="custom_select">
@@ -129,6 +134,7 @@
             </select>
           </div>
         </div>
+
         <div class="inputfield">
           <label>Pin Code</label>
           <input type="text" class="input" name="pincode" placeholder="Enter your postal code" maxlength="6"
@@ -148,6 +154,7 @@
             <label for="">Travel</label>
           </div>
         </div>
+
         <div class="inputfield">
           <label>Upload Photo</label>
           <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required />
@@ -160,13 +167,14 @@
           </label>
           <p>I hereby declare that the above information provided is true and correct.</p>
         </div>
+
         <div class="inputfield" required>
           <div data-netlify-recaptcha="true"></div>
         </div>
+
         <div class="inputfield btns" id="btn">
           <button type="submit" value="Register" class="btn" onclick="checkPassword()">Register</button>
           <button type="reset" value="Reset" class="btn">Reset</button>
-
         </div>
 
       </div>

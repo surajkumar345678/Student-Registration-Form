@@ -100,7 +100,6 @@ body {
   border-radius: 3px;
 }
 
-
 .wrapper .form .inputfield .input:focus,
 .wrapper .form .inputfield .textarea:focus,
 .wrapper .form .inputfield .custom_select select:focus {
@@ -172,7 +171,6 @@ body {
   background: linear-gradient(to top left, #fe1e50 0%, #282881 100%);
 
 }
-
 
 .wrapper .form .inputfield:last-child {
   margin-bottom: 0;
