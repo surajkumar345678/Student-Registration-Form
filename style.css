@@ -191,6 +191,10 @@ body {
   .wrapper .form .inputfield.terms {
     flex-direction: row;
   }
+  #btn{
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 #radio {
