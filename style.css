@@ -227,5 +227,5 @@ body {
   padding: 5px 150px;
 }
 #name{
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
