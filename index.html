@@ -27,8 +27,8 @@
         </div>
         <div class="inputfield">
           <label for="">Gender</label>
-          <input type="radio" name="gender" id="radio" required>Male
-          <input type="radio" name="gender" id="radio" required>Female
+          <input type="radio" name="gender male" id="radio" required>Male
+          <input type="radio" name="gender female" id="radio" required>Female
         </div>
         <div class="inputfield">
           <label for="">Age</label>
@@ -138,7 +138,7 @@
         </div>
         <div class="inputfield">
           <label>Upload Photo</label>
-          <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7"/>
+          <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required/>
         </div>
 
         <div class="inputfield terms">
@@ -149,7 +149,7 @@
           <p>I hereby declare that the above information provided is true and correct.</p>
         </div>
         <div class="inputfield">
-          <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha="true" required></div>
         </div>
         <div class="inputfield" id="btn">
           <button type="submit" value="Register" class="btn">Register</button>
