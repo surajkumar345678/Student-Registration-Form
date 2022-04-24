@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Registration Form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-1ZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9s+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -15,6 +18,7 @@
     </div>
     <form action="POST" data-netlify="true">
       <div class="form">
+
         <div class="inputfield">
           <label>First Name</label>
           <input type="text" class="input" name="fname" placeholder="Enter first name" maxlength="30"
@@ -49,14 +53,23 @@
         </div>
         <div class="inputfield">
           <label>Password</label>
-          <input type="password" class="input" name="password" placeholder="Enter your password min 8 characters"
-            maxlength="100" minlength="8" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+          <input type="password" class="input" id="password" name="password"
+            placeholder="Enter your password min 8 characters" autocomplete="off" onkeyup='check()'
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            maxlength="100" minlength="8" required>
+
         </div>
         <div class="inputfield">
           <label>Confirm Password</label>
-          <input type="password" class="input" name="password" placeholder="Enter your password min 8 characters"
-            maxlength="100" minlength="8" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+          <input type="password" onkeyup='check()' class="input" id="confirm-password" name="confirm-password"
+            placeholder="Confirm password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            maxlength="100" minlength="8" required>
+
+
         </div>
+        <p id="message"></p>
         <div class="inputfield">
           <label for="">Phone Number</label>
           <div class="custom-select" id="phone-codes">
@@ -138,7 +151,7 @@
         </div>
         <div class="inputfield">
           <label>Upload Photo</label>
-          <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required/>
+          <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required />
         </div>
 
         <div class="inputfield terms">
@@ -152,7 +165,7 @@
           <div data-netlify-recaptcha="true" required></div>
         </div>
         <div class="inputfield" id="btn">
-          <button type="submit" value="Register" class="btn">Register</button>
+          <button type="submit" value="Register" class="btn" onclick="checkPassword()">Register</button>
           <button type="reset" value="Reset" class="btn">Reset</button>
 
         </div>
@@ -162,5 +175,27 @@
   </div>
 
 </body>
+<script type="text/javascript">
+  function checkPassword() {
+    let password = document.getElementById("password").value;
+    let confirmpassword = document.getElementById("confirm-password").value;
+    console.log(password, confirm - password);
+    let message = document.getElementById("message");
+    if (password.length != 0) {
+      if (password == confirmpassword) {
+        message.textContent = "Password match";
+        message.style.color = "#00FF00"
+      } else {
+        message.textContent = "Password does not match";
+        message.style.color = "#FF0000";
+      }
+    }
+    else {
+      alert("All details are compulsory. Please fill all details.");
+      message.textContent = "";
+    }
+  }
+
+</script>
 
 </html>

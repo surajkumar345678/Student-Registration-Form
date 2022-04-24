@@ -218,3 +218,11 @@ body {
 #phone-number {
   width: 83%;
 }
+
+#message{
+  font-size: 14px;
+  margin: 2px 0;
+  display: inline-block;
+  color:black;
+  padding: 5px 150px;
+}
