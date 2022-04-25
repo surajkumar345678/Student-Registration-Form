@@ -196,10 +196,10 @@ body {
   }
   #hobbies{
     display:inline-block;
-    /* float:inline-start; */
     width: 30%;
     
   }
+  
 }
 
 #radio {
