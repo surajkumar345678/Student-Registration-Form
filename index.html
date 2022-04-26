@@ -156,8 +156,9 @@
         </div>
 
         <div class="inputfield">
-          <label>Upload Photo</label>
+          <label>Upload Photo</label><p id="file-size">*Max size 100kb.</p>
           <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required />
+          
         </div>
 
         <div class="inputfield terms">
@@ -202,6 +203,15 @@
       message.textContent = "";
     }
   }
+
+  var uploadField = document.getElementById("myfile");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 102400){
+       alert("File is too big! File size should be 100kb.");
+       this.value = "";
+    };
+};
 
 </script>
 

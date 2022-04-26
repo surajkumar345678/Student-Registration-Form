@@ -239,3 +239,6 @@ body {
 #name {
   text-transform: capitalize;
 }
+#file-size{
+  color: #fe1e50;
+}
