@@ -78,4 +78,9 @@ A control for entering a date consisting of a week-year number and a week number
   
 **datetime: **
 A control for entering a date and time (hour, minute, second, and fraction of a second) based on UTC time zone.	
+  
+  
+  
+  
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/168507ed-6e7d-40a4-bb68-f9d12ad4df4b/deploy-status)](https://app.netlify.com/sites/srf/deploys)
 
