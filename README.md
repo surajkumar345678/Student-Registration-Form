@@ -1,3 +1,5 @@
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/168507ed-6e7d-40a4-bb68-f9d12ad4df4b/deploy-status)](https://app.netlify.com/sites/srf/deploys)
+
 # Student-Registration-Form
 **HTML Forms**
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
@@ -82,5 +84,5 @@ A control for entering a date and time (hour, minute, second, and fraction of a 
   
   
   
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/168507ed-6e7d-40a4-bb68-f9d12ad4df4b/deploy-status)](https://app.netlify.com/sites/srf/deploys)
+ 
 
