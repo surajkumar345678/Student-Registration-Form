@@ -3,17 +3,19 @@
 * {
   margin: 0;
   padding: 0;
+  padding-bottom: 2px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
-  padding: 0 10px;
+ 
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -21,14 +23,10 @@ body {
 	50% {
 		background-position: 100% 50%;
 	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
-
 .wrapper {
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   background: white;
   margin: 50px auto;
