@@ -80,6 +80,9 @@ A control for entering a date consisting of a week-year number and a week number
   
 **datetime: **
 A control for entering a date and time (hour, minute, second, and fraction of a second) based on UTC time zone.	
+
+![image](https://user-images.githubusercontent.com/60316890/177035169-aabf1e04-d430-47e0-973b-63cdd04aa272.png)
+
   
   
   
