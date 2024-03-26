@@ -5,11 +5,8 @@ This project is a simple web application for student registration. It allows use
 
 ### Screenshots
 
-![Screenshot 1](screenshot1.png)
-*Screenshot 1: Initial view of the registration form*
-
-![Screenshot 2](screenshot2.png)
-*Screenshot 2: Password validation and confirmation message*
+*Screenshot: Initial view of the registration form*
+![Screenshot (45)](https://github.com/surajkumar345678/Student-Registration-Form/assets/60316890/a799f1cf-83ed-44e8-8c2c-5cd5812c2997)
 
 ### Features
 
