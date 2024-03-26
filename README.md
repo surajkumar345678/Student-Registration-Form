@@ -26,7 +26,7 @@ This project is a simple web application for student registration. It allows use
 To run this project locally, simply download the files and open the `index.html` file in a web browser.
 
 ```bash
-git clone https://github.com/yourusername/student-registration-form.git
+git clone https://github.com/surajkumar345678/student-registration-form.git
 cd student-registration-form
 ```
 
